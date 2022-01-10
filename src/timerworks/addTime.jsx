@@ -26,7 +26,7 @@ export default function User({ userId, setList, id }) {
   }, [userId,id]);
   const timeIn = useCallback(() => {
     // console.log("timeout",request);
-    fetch("http://localhost:5000/timein", request)
+    fetch(`${process.env.REACT_APP_SERVER}timein`, request)
       .catch((err) => {})
       .then((res) =>
         res.json().then((data) => {
