@@ -1,0 +1,36 @@
+.button-login {
+  margin-top: 150px;
+  margin-right: 25%;
+  border-radius: 15px;
+  font-family: "Franklin Gothic Medium";
+  padding: 25px 50px;
+  font-size: 3em;
+  background-color: #04aa6d;
+  width: 250px;
+  position: relative;
+  float: right;
+}
+.button-manger {
+  float: left;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 150px;
+  border-radius: 15px;
+  text-align: center;
+
+  font-family: "Franklin Gothic Medium";
+  background-color: #04aa6d;
+  padding: 25px 50px;
+  font-size: 3em;
+}
+.button-login:hover {
+  background-color: rgb(83, 109, 0);
+  color: white;
+}
+
+.button-manger:hover {
+  background-color: rgb(83, 109, 0);
+  color: white;
+}
+.div {
+}

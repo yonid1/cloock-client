@@ -1,0 +1,72 @@
+.table {
+  margin-top: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 150px;
+}
+td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+tr:hover {
+  background-color: #ddd;
+}
+.remove {
+  display:inline-block;
+
+  background-color: #1a6248;
+  width: 90%;
+  font-family: Georgia;
+  font-size:20px;
+  text-align: center;
+
+}
+.viewMe:hover{
+  background-color: brown;
+  color: rgb(250, 248, 248);
+}
+.remove:hover{
+  background-color: brown;
+  color: rgb(250, 248, 248);
+}
+.viewMe{
+  /* display:inline-block; */
+  background-color: #5ab493;
+  /* width: 90%; */
+  font-family: Georgia;
+  font-size:20px;
+  text-align: center;
+}
+.tablePersons{
+  margin-top: 1%;
+  font-family:'Gill Sans';
+  /* border-collapse: collapse; */
+  /* margin-left: 150px; */
+}
+.delete{
+  margin-left: 33%;
+  /* opacity: 100%; */
+  border-radius: 2%;
+  background-color: rgb(255, 255, 255);
+  /* padding-top: 150px; */
+  width: 450px;
+  top: 20;
+  border: 5px solid rgb(26, 19, 19);
+  position: absolute;
+  /* visibility: hidden; */
+  /* display: none;
+   */
+  height: 150px;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
