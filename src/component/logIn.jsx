@@ -26,13 +26,7 @@ export default function LogIn() {
     body: JSON.stringify({ name: name, password: password }),
   };
 console.log("process.env.REACT_APP_SERVER",process.env.REACT_APP_SERVER);
-  // const requestToken = {
-  //   mode: "cors",
-  //   method: "POST",
-  //   headers: {
-  //     "x-access-token": localStorage.getItem("token"),
-  //   },
-  // };
+
   const loginAuthentication = useCallback(async () => {
     if (isSending) return;
     setIsSending(true);
@@ -51,15 +45,7 @@ console.log("process.env.REACT_APP_SERVER",process.env.REACT_APP_SERVER);
     setIsSending(false);
   }, [isSending, name, password]);
 
-  // const verifyToken = useCallback(async () => {
-  //   await fetch(`${process.env.REACT_APP_SERVER}verifytoken`, requestToken)
-  //     .then((res) => res.text())
-  //     .then((data) => console.log("data verify token", data))
 
-  //     .catch((err) => {
-  //       console.error(err);
-  //     });
-  // }, [requestToken]);
 
   function validateForm() {
     return name.length > 0 && password.length > 0;
@@ -72,10 +58,8 @@ console.log("process.env.REACT_APP_SERVER",process.env.REACT_APP_SERVER);
   return (
     <div>
       <div className="login">
-        {/* <Time /> */}
 
         <form className="form">
-          {/* <Form.Group > */}
           <label>Name</label>
           <input
             className="input"
@@ -83,8 +67,7 @@ console.log("process.env.REACT_APP_SERVER",process.env.REACT_APP_SERVER);
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {/* </Form.Group> */}
-          {/* <Form.Group size="lg" controlId="password"> */}
+ 
           <label>Password</label>
 
           <input
@@ -93,7 +76,6 @@ console.log("process.env.REACT_APP_SERVER",process.env.REACT_APP_SERVER);
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></input>
-          {/* </Form.Group> */}
           <button
             className="button"
             block
@@ -104,15 +86,7 @@ console.log("process.env.REACT_APP_SERVER",process.env.REACT_APP_SERVER);
           >
             Login
           </button>
-          <p></p>
-          <button
-            className="button"
-            type="submit"
-            size="lg"
-            // onClick={verifyToken}
-          >
-            verifyToken
-          </button>
+          
         </form>
       </div>
     </div>

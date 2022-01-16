@@ -23,7 +23,7 @@
   color: white;
   background-color: #05692b;
 }
-.buttonout {
+.buttonOut {
   margin-left: 35%;
   position: relative;
   font-family: "Gill Sans";
@@ -38,11 +38,11 @@
   display: flex;
   justify-content: center;
 }
-.buttonout:hover {
+.buttonOut:hover {
   color: white;
   background-color: rgb(15, 121, 148);
 }
-.buttonin {
+.buttonIn {
     margin-top: -40px;
   margin-left: 45%;
   font-family: "Gill Sans";
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
 }
-.buttonin:hover {
+.buttonIn:hover {
   color: white;
   background-color: rgb(15, 121, 148);
 }

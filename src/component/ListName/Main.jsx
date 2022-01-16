@@ -119,10 +119,10 @@ function Main(e) {
   return (
     <div className="App">
       {/* <form className="container"> */}
-      <div className="container modal-header">
-        <div className="row row-cols-2">
-          <div className="col">
-            <div className="form-floating mb-3">
+      <div className="row-cols-2">
+        {/* <div className="row-cols-2"> */}
+          {/* <div className = "col">
+            <div className="form-floating mb-3"> */}
               <input
                 className="form-control"
                 id="floatingInput"
@@ -133,8 +133,8 @@ function Main(e) {
                 onChange={handelName}
               />
               <label for="floatingInput">Name</label>
-            </div>
-            <div className="form-floating mb-3">
+            {/* </div> */}
+            {/* <div className="form-floating mb-3"> */}
               <input
                 className="form-control"
                 title="phone"
@@ -143,10 +143,10 @@ function Main(e) {
                 onChange={handelPhone}
               ></input>
               <label for="floatingInput">Phone</label>
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */}
           {/* <div className="col"> */}
-          <div className="form-floating mb-3">
+          {/* <div className="form-floating mb-3"> */}
             <input
               className="form-control"
               placeholder="Jpb"
@@ -156,8 +156,8 @@ function Main(e) {
               onChange={handelJob}
             ></input>
             <label for="floatingInput">Job</label>
-          </div>
-          <div className="form-floating mb-3">
+          {/* </div> */}
+          {/* <div className="form-floating mb-3"> */}
             <input
               className="form-control"
               type="text"
@@ -167,13 +167,13 @@ function Main(e) {
               onChange={handelUserId}
             ></input>
             <label for="floatingInput">userId</label>
-          </div>
+          {/* </div> */}
 
           <button onClick={fetchRequest}>add</button>
           {/* </form> */}
           {/* </div> */}
         </div>
-      </div>{" "}
+      {/* // </div>{" "} */}
       {divRemove && (
         <div className="delete">
           You are about to delete this user from the system, are you sure?{" "}

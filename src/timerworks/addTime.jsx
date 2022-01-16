@@ -36,8 +36,8 @@ export default function User({ userId, setList, id }) {
   }, [userId]);
   return (
     <div>
-      <button className="buttonout" onClick={timeout}>timeOut</button>
-      <button className="buttonin" onClick={timeIn}>timeIn</button>
+      <button className="buttonOut" onClick={timeout}>timeOut</button>
+      <button className="buttonIn" onClick={timeIn}>timeIn</button>
     </div>
   );
 }

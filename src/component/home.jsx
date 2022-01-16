@@ -1,7 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./home.css"
-import Manger from "../component/loginManger.jsx";
 import { useHistory } from "react-router-dom";
 
 export default function Home() {
@@ -14,24 +12,19 @@ export default function Home() {
   }
 
   return (
-    <div>
-      {/* <Router> */}
-        {/* <Link to="/formLogin" style={{ color: "black" }}> */}
-          {/* <Box mt={0} ml={170}> */}
+    <div  >
+  
           <div className="div">
             <button
           className ="button-login"
             variant="outlined"
             color="black"
-            // className={classes.root}
             onClick={login}
           >
             Login
           </button>
           <p></p>
-          {/* </Box> */}
-        {/* </Link> */}
-        {/* <Link to="manger"> */}
+       
           <button
           className="button-manger"
           onClick={loginManger}
