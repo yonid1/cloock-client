@@ -11,6 +11,7 @@ function Main(e) {
   const [allUserId, setAllUserId] = useState([]);
   const [divRemove, setDivRemove] = useState(false);
   const [idRemove , setIdRemove]=useState()
+  const [divAdd , setDivAdd] = useState(false)
   let history = useHistory();
   console.log("list", list);
   
@@ -116,10 +117,12 @@ function Main(e) {
         }
       }); setDivRemove(false)
   }, [idRemove]);
+
   return (
     <div className="App">
       {/* <form className="container"> */}
-      <div className="row-cols-2">
+      <button className="buttonAdd" onClick={()=>setDivAdd(!divAdd)}> Add Name </button>
+      {divAdd&& (<div className="row-cols-2">
         {/* <div className="row-cols-2"> */}
           {/* <div className = "col">
             <div className="form-floating mb-3"> */}
@@ -172,7 +175,8 @@ function Main(e) {
           <button onClick={fetchRequest}>add</button>
           {/* </form> */}
           {/* </div> */}
-        </div>
+        </div>)}
+      
       {/* // </div>{" "} */}
       {divRemove && (
         <div className="delete">
